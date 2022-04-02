@@ -43,3 +43,13 @@ echo $PATH
 
 #output example 
 /sbin:/bin:/usr/sbin:/usr/bin:/root/bin:/usr/lib/jvm/java-11-openjdk-11.0.13.0.8-1.amzn2.0.3.x86_64:/opt/maven:/opt/maven/bin
+
+
+4.Navigate to jenkins console in global tool configuration and add the jdk installation
+Select add jdk and add below java path
+/usr/lib/jvm/java-11-openjdk-11.0.13.0.8-1.amzn2.0.3.x86_64
+
+
+5. Add maven installation in jenkins console
+Select add maven and add below maven path
+/opt/maven
