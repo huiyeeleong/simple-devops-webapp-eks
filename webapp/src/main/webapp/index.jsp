@@ -17,7 +17,7 @@
     <br>
 
     <label for="password-hint"><b>Enter Password Hint</b></label>
-    <input type="text" placeholder="Enter Password Hint" name="password-hint" id="password-hint" required>
+    <input type="password" placeholder="Enter Password Hint" name="password-hint" id="password-hint" required>
     <br>
 
     <label for="psw"><b>Password</b></label>
