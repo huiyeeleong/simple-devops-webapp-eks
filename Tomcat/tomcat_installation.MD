@@ -8,20 +8,21 @@ amazon-linux-extras install java-openjdk11
    ```sh 
    # Create tomcat directory
    cd /opt
-   wget http://mirrors.fibergrid.in/apache/tomcat/tomcat-8/v8.5.35/bin/apache-tomcat-8.5.35.tar.gz
-   tar -xvzf /opt/apache-tomcat-<version>.tar.gz
+   wget https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.78/bin/apache-tomcat-8.5.78.tar.gz
+   tar -xvzf apache-tomcat-8.5.78.tar.gz
    ```
 1. give executing permissions to startup.sh and shutdown.sh which are under bin. 
    ```sh
-   chmod +x /opt/apache-tomcat-<version>/bin/startup.sh 
-   chmod +x /opt/apache-tomcat-<version>/bin/shutdown.sh
+   mv apache-tomcat-8.5.78 tomcat
+   chmod +x /opt/tomcat/bin/startup.sh 
+   chmod +x /opt/tomcat/bin/shutdown.sh
    ```
    > Note: you may get below error while starting tomcat incase if you dont install Java   
    `Neither the JAVA_HOME nor the JRE_HOME environment variable is defined At least one of these environment variable is needed to run this program`
 1. create link files for tomcat startup.sh and shutdown.sh 
    ```sh
-   ln -s /opt/apache-tomcat-<version>/bin/startup.sh /usr/local/bin/tomcatup
-   ln -s /opt/apache-tomcat-<version>/bin/shutdown.sh /usr/local/bin/tomcatdown
+   ln -s /opt/tomcat/bin/startup.sh /usr/local/bin/tomcatup
+   ln -s /opt/tomcat/bin/shutdown.sh /usr/local/bin/tomcatdown
    tomcatup
    ```
   #### Check point :
