@@ -1,4 +1,4 @@
-# simple-jenkins-cicd
+# simple-devops-webapp-eks
 Simple Hello World Web Application Deploy Through CI/CD Pipeline
 
 Requirement for this project
